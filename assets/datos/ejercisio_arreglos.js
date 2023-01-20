@@ -9,4 +9,6 @@ let num_3 = prompt("Elige un numero")
 numero.push(num_3);
 
 let suma = Number(numero[0]) + parseInt(numero[1]) + parseFloat(numero[2])
+let ultimo_numero = (numero.length -1)
+console.log()
 
