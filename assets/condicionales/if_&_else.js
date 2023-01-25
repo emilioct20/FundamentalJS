@@ -15,7 +15,7 @@ if(num === '100'){
     document.write('NO ES IGUAL')
     )
 
-//Elvis 
+ 
 
 // elses multiples 
 

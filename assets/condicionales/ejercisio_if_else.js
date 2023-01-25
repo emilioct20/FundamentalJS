@@ -8,3 +8,8 @@ if(credito>= parseInt(retiro)){
     document.write('saldo insuficiente')
 )
 
+
+//Elvis
+/*
+credito >= retiro ? document.write('es posible retirar') : document.write('no es posible retirar')
+*/
