@@ -7,46 +7,116 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   </head>
   <body>
+
+    <script src="dom.js"></script>
+
+  <div class="container">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">Netflix</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">Series</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Peliculas</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                  Lenguaje
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Español</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Ingles</a></li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categorias
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Acción</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Romance</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Suspenso</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Terror</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Documental</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Comedia</a></li>
+                </ul>
               </li>
+              <!--<li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>-->
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <input class="form-control me-2" type="search" placeholder="Que buscas?" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
           </div>
         </div>
       </nav>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <div class="container">
-        <!-- Content here -->
+      <div class="row w-100">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/05/Record-of-Ragnarok-Header.jpg" class="d-block w-100" alt="Record of ragnarock">
+            </div>
+            <div class="carousel-item">
+              <img src="https://1.bp.blogspot.com/-YCc9c3Iq2hQ/XdBDMrOlm1I/AAAAAAAADZs/9rOTtHTmW2YOCvl12UhDk4VZT_PClmSzACLcBGAsYHQ/s1600/Peaky-Blinders-Season-5.jpg" class="d-block w-100" alt="Peaky Blinders">
+            </div>
+            <div class="carousel-item">
+              <img src="https://fr.web.img4.acsta.net/newsv7/20/01/29/12/25/3425157.jpg" class="d-block w-100" alt="Arrow">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
-
+      <br></br>
+      <div class="row w-100">
+        <div class="card" style="width: 18rem;" id="serie_1">
+          <img src="https://tse4.mm.bing.net/th?id=OIP.4Gxxhbu5PueJyW4bmxCL2QHaEK&pid=Api&P=0" class="card-img-top" alt="Puss n boots">
+          <div class="card-body">
+            <h5 class="card-title">Puss n Boots: The last wish</h5>
+            <p class="card-text">In this movie cat goes face to face against death, will he survive?</p>
+            <a href="#" class="btn btn-primary">Watch now</a>
+          </div>
+        </div> 
+        <div class="card" style="width: 18rem;" id="serie_2">
+          <img src="https://tse4.mm.bing.net/th?id=OIP.4Gxxhbu5PueJyW4bmxCL2QHaEK&pid=Api&P=0" class="card-img-top" alt="Puss n boots">
+          <div class="card-body">
+            <h5 class="card-title">Puss n Boots: The last wish</h5>
+            <p class="card-text">In this movie cat goes face to face against death, will he survive?</p>
+            <a href="#" class="btn btn-primary">Watch now</a>
+          </div>
+        </div> 
+        <div class="card" style="width: 18rem;" id="serie_3">
+          <img src="https://tse4.mm.bing.net/th?id=OIP.4Gxxhbu5PueJyW4bmxCL2QHaEK&pid=Api&P=0" class="card-img-top" alt="Puss n boots">
+          <div class="card-body">
+            <h5 class="card-title">Puss n Boots: The last wish</h5>
+            <p class="card-text">In this movie cat goes face to face against death, will he survive?</p>
+            <a href="#" class="btn btn-primary">Watch now</a>
+          </div>
+        </div> 
+      </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+   <!-- Content here -->
+   
   </body>
 </html>
